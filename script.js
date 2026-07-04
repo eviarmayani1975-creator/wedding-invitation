@@ -101,3 +101,33 @@ form.addEventListener("submit", function(e){
     );
 
 });
+
+const wishForm = document.getElementById("wishForm");
+
+const wishList = document.getElementById("wishList");
+
+wishForm.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const nama = document.getElementById("wishName").value;
+
+const pesan = document.getElementById("wishMessage").value;
+
+const card = document.createElement("div");
+
+card.className="message";
+
+card.innerHTML=`
+
+<h4>${nama}</h4>
+
+<p>${pesan}</p>
+
+`;
+
+wishList.prepend(card);
+
+wishForm.reset();
+
+});
