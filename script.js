@@ -77,3 +77,27 @@ document.getElementById("minutes").textContent = Math.max(minutes,0);
 document.getElementById("seconds").textContent = Math.max(seconds,0);
 
 },1000);
+
+const form = document.getElementById("rsvpForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const nama = document.getElementById("nama").value;
+
+    const status = document.getElementById("status").value;
+
+    alert(
+
+        "Terima kasih, " +
+
+        nama +
+
+        "\n\nKonfirmasi Anda: " +
+
+        status
+
+    );
+
+});
