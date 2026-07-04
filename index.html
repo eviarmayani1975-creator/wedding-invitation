@@ -2,318 +2,285 @@
 <html lang="id">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
 
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Wedding Invitation</title>
-
-<link rel="stylesheet"
-href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="intro">
+  <!-- INTRO VIDEO -->
+  <div id="intro">
 
-<video
-id="introVideo"
-autoplay
-muted
-playsinline>
+    <video id="introVideo" autoplay muted playsinline>
+      <source src="assets/video/intro.mp4" type="video/mp4">
+    </video>
 
-<source
-src="assets/video/intro.mp4"
-type="video/mp4">
+    <button id="skip">
+      Lewati >>
+    </button>
 
-</video>
+  </div>
 
-<button id="skip">
+  <!-- COVER -->
+  <div class="cover">
 
-Lewati >>
+    <div class="overlay">
 
-</button>
+      <p class="subtitle">THE WEDDING OF</p>
 
-</div>
-  
-<div class="cover">
+      <h1>Muhammad David</h1>
 
-<div class="overlay">
+      <div class="and">&</div>
 
-<p class="subtitle">
-THE WEDDING OF
-</p>
+      <h1>Khairani</h1>
 
-<h1>
-Muhammad David
-</h1>
+      <p class="date">
+        25 Juli 2026
+      </p>
 
-<div class="and">
-&
-</div>
+      <div class="guest">
+        <p>Kepada Yth.</p>
+        <h3 id="guestName">Bapak/Ibu/Saudara/i</h3>
+      </div>
 
-<h1>
-Khairani
-</h1>
+      <button id="open">
+        💌 Buka Undangan
+      </button>
 
-<p class="date">
-25 Juli 2026
-</p>
+    </div>
 
-<div class="guest">
+  </div>
 
-  <p>Kepada Yth.</p>
+  <!-- HOME -->
+  <section id="home">
 
-  <h3 id="guestName">
-    Bapak/Ibu/Saudara/i
-  </h3>
+    <!-- OPENING -->
+    <section class="opening">
 
-</div>
-  
-<button id="open">
+      <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
 
-💌 Buka Undangan
+      <p>
+        Dengan memohon rahmat dan ridha Allah SWT,
+        kami mengundang Bapak/Ibu/Saudara/i
+        untuk hadir pada acara pernikahan kami.
+      </p>
 
-</button>
+    </section>
 
-</div>
+    <!-- COUNTDOWN -->
+    <section class="countdown">
 
-</div>
+      <h2>💍 Menuju Hari Bahagia</h2>
 
-<section id="home">
+      <div class="countdown-box">
 
-  <section class="countdown">
+        <div class="item">
+          <span id="days">0</span>
+          <p>Hari</p>
+        </div>
 
+        <div class="item">
+          <span id="hours">0</span>
+          <p>Jam</p>
+        </div>
+
+        <div class="item">
+          <span id="minutes">0</span>
+          <p>Menit</p>
+        </div>
+
+        <div class="item">
+          <span id="seconds">0</span>
+          <p>Detik</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BRIDE & GROOM -->
     <section class="couple">
 
-<h2>Bride & Groom</h2>
+      <h2>Bride & Groom</h2>
 
-<section class="event">
+      <div class="person">
 
-<h2>Wedding Event</h2>
+        <img src="assets/images/groom.jpg" alt="Groom">
 
-<section class="gallery">
+        <h3>Muhammad David</h3>
 
-  <h2>Galeri Foto</h2>
+        <p>Putra Ke-4 dari</p>
 
-  <div class="gallery-grid">
+        <p>Bapak M. Yani (Pak Adek)</p>
 
-    <img src="assets/images/gallery1.jpg" alt="Galeri 1">
-    <img src="assets/images/gallery2.jpg" alt="Galeri 2">
-    <img src="assets/images/gallery3.jpg" alt="Galeri 3">
-    <img src="assets/images/gallery4.jpg" alt="Galeri 4">
-    <img src="assets/images/gallery5.jpg" alt="Galeri 5">
-    <img src="assets/images/gallery6.jpg" alt="Galeri 6">
-    <img src="assets/images/gallery7.jpg" alt="Galeri 7">
-    <img src="assets/images/gallery8.jpg" alt="Galeri 8">
+        <p>&</p>
 
-  </div>
+        <p>Ibu Japriah (Ibu Ijap)</p>
 
-<section class="rsvp">
+      </div>
 
-  <h2>Konfirmasi Kehadiran</h2>
+      <div class="love">❤️</div>
 
-  <form id="rsvpForm">
+      <div class="person">
 
-    <input
-      type="text"
-      id="nama"
-      placeholder="Masukkan Nama"
-      required>
+        <img src="assets/images/bride.jpg" alt="Bride">
 
-    <select id="status">
+        <h3>Khairani</h3>
 
-      <option value="">Pilih Kehadiran</option>
+        <p>Putri Pertama dari</p>
 
-      <option value="Hadir">
-        Ya, Insya Allah Hadir
-      </option>
+        <p>Bapak Herlianto</p>
 
-      <option value="Tidak Hadir">
-        Maaf, Tidak Bisa Hadir
-      </option>
+        <p>&</p>
 
-    </select>
+        <p>Ibu Wulandari</p>
 
-    <button type="submit">
+      </div>
 
-      Kirim Konfirmasi
+    </section>
 
-    </button>
+    <!-- EVENT -->
+    <section class="event">
 
-  </form>
+      <h2>Wedding Event</h2>
 
-</section>
+      <div class="card">
 
-<section class="wish">
+        <h3>🕌 Akad Nikah</h3>
 
-  <h2>💌 Ucapan & Doa</h2>
+        <p><strong>Hari :</strong> Kamis</p>
+        <p><strong>Tanggal :</strong> 23 Juli 2026</p>
+        <p><strong>Jam :</strong> 08.00 WIB</p>
 
-  <form id="wishForm">
+        <p><strong>Tempat :</strong></p>
 
-    <input
-      type="text"
-      id="wishName"
-      placeholder="Nama Anda"
-      required>
+        <p>Kediaman Mempelai Wanita</p>
 
-    <textarea
-      id="wishMessage"
-      rows="5"
-      placeholder="Tuliskan ucapan dan doa..."
-      required></textarea>
+        <p>Jl. Beringin Pasar 7, Hinai - Langkat</p>
 
-    <button type="submit">
+      </div>
 
-      Kirim Ucapan
+      <div class="card">
 
-    </button>
+        <h3>🎉 Ngunduh Mantu</h3>
 
-  </form>
+        <p><strong>Hari :</strong> Sabtu</p>
+        <p><strong>Tanggal :</strong> 25 Juli 2026</p>
+        <p><strong>Jam :</strong> 10.00 WIB</p>
 
-  <div id="wishList"></div>
+        <p><strong>Tempat :</strong></p>
 
-</section>
-  
-</section>
-  
-<div class="card">
+        <p>Kediaman Mempelai Pria</p>
 
-<h3>🕌 Akad Nikah</h3>
+        <p>Jl. Swadaya No. 9, Pinang Baris, Lalang - Medan Sunggal</p>
 
-<p><strong>Hari :</strong> Kamis</p>
+      </div>
 
-<p><strong>Tanggal :</strong> 23 Juli 2026</p>
+      <a class="maps"
+         href="https://maps.app.goo.gl/1nmByZQVkTKiQVS86?g_st=ic"
+         target="_blank">
 
-<p><strong>Jam :</strong> 08.00 WIB</p>
+        📍 Buka Google Maps
 
-<p><strong>Tempat :</strong></p>
+      </a>
 
-<p>Kediaman Mempelai Wanita</p>
+    </section>
 
-<p>Jl. Beringin Pasar 7, Hinai-Langkat</p>
+    <!-- GALLERY -->
+    <section class="gallery">
 
-</div>
+      <h2>Galeri Foto</h2>
 
-<div class="card">
+      <div class="gallery-grid">
 
-<h3>🎉 Ngunduh Mantu</h3>
+        <img src="assets/images/gallery1.jpg" alt="">
+        <img src="assets/images/gallery2.jpg" alt="">
+        <img src="assets/images/gallery3.jpg" alt="">
+        <img src="assets/images/gallery4.jpg" alt="">
+        <img src="assets/images/gallery5.jpg" alt="">
+        <img src="assets/images/gallery6.jpg" alt="">
+        <img src="assets/images/gallery7.jpg" alt="">
+        <img src="assets/images/gallery8.jpg" alt="">
 
-<p><strong>Hari :</strong> Sabtu</p>
+      </div>
 
-<p><strong>Tanggal :</strong> 25 Juli 2026</p>
+    </section>
 
-<p><strong>Jam :</strong> 10.00 WIB</p>
+    <!-- RSVP -->
+    <section class="rsvp">
 
-<p><strong>Tempat :</strong></p>
+      <h2>Konfirmasi Kehadiran</h2>
 
-<p>Kediaman Mempelai Pria</p>
+      <form id="rsvpForm">
 
-<p>Jln. Swadaya No. 9, Pinang Baris, Lalang-Medan Sunggal</p>
+        <input
+          type="text"
+          id="nama"
+          placeholder="Masukkan Nama"
+          required>
 
-</div>
+        <select id="status" required>
 
-<a
-class="maps"
-href="https://maps.app.goo.gl/1nmByZQVkTKiQVS86?g_st=ic"
-target="_blank">
+          <option value="">Pilih Kehadiran</option>
 
-📍 Buka Google Maps
+          <option value="Hadir">
+            Ya, Insya Allah Hadir
+          </option>
 
-</a>
+          <option value="Tidak Hadir">
+            Maaf, Tidak Bisa Hadir
+          </option>
 
-</section>
-      
-<div class="person">
+        </select>
 
-<img
-src="assets/images/groom.jpg"
-alt="Groom">
+        <button type="submit">
+          Kirim Konfirmasi
+        </button>
 
-<h3>Muhammad David</h3>
+      </form>
 
-<p>Putra Ke-4 dari</p>
+    </section>
 
-<p>Bapak M. Yani (Pak Adek)</p>
+    <!-- UCAPAN -->
+    <section class="wish">
 
-<p>&</p>
+      <h2>💌 Ucapan & Doa</h2>
 
-<p>Ibu Japriah (Ibu Ijap)</p>
+      <form id="wishForm">
 
-</div>
+        <input
+          type="text"
+          id="wishName"
+          placeholder="Nama Anda"
+          required>
 
-<div class="love">
+        <textarea
+          id="wishMessage"
+          rows="5"
+          placeholder="Tuliskan ucapan dan doa..."
+          required></textarea>
 
-❤️
+        <button type="submit">
+          Kirim Ucapan
+        </button>
 
-</div>
+      </form>
 
-<div class="person">
+      <div id="wishList"></div>
 
-<img
-src="assets/images/bride.jpg"
-alt="Bride">
+    </section>
 
-<h3>Khairani</h3>
+  </section>
 
-<p>Putri Pertama dari</p>
+  <!-- AUDIO -->
+  <audio id="music" loop>
+    <source src="assets/music/wedding.mp3" type="audio/mpeg">
+  </audio>
 
-<p>Bapak Herlianto</p>
-
-<p>&</p>
-
-<p>Ibu Wulandari</p>
-
-</div>
-
-</section>
-
-  <h2>💍 Menuju Hari Bahagia</h2>
-
-  <div class="countdown-box">
-
-    <div class="item">
-      <span id="days">0</span>
-      <p>Hari</p>
-    </div>
-
-    <div class="item">
-      <span id="hours">0</span>
-      <p>Jam</p>
-    </div>
-
-    <div class="item">
-      <span id="minutes">0</span>
-      <p>Menit</p>
-    </div>
-
-    <div class="item">
-      <span id="seconds">0</span>
-      <p>Detik</p>
-    </div>
-
-  </div>
-
-</section>
-
-  <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
-
-  <p>
-    Dengan memohon rahmat dan ridha Allah SWT,
-    kami mengundang Bapak/Ibu/Saudara/i
-    untuk hadir pada acara pernikahan kami.
-  </p>
-
-</section>
-
-<audio id="music" loop>
-  <source src="assets/music/wedding.mp3" type="audio/mpeg">
-</audio>
-  
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 
