@@ -4,6 +4,8 @@ const cover = document.querySelector(".cover");
 
 const home = document.getElementById("home");
 
+const music = document.getElementById("music");
+
 tombol.onclick = function () {
 
 music.play();
