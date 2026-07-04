@@ -6,6 +6,8 @@ const home = document.getElementById("home");
 
 tombol.onclick = function () {
 
+music.play();
+  
   cover.style.opacity = "0";
   cover.style.transition = "0.8s";
 
