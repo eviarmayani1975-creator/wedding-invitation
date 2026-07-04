@@ -1,3 +1,5 @@
+const guestName = document.getElementById("guestName");
+
 const intro=document.getElementById("intro");
 
 const introVideo=document.getElementById("introVideo");
@@ -37,5 +39,15 @@ intro.style.display="none";
 skip.onclick=function(){
 
 intro.style.display="none";
+
+}
+
+const params = new URLSearchParams(window.location.search);
+
+const namaTamu = params.get("to");
+
+if(namaTamu){
+
+    guestName.textContent = decodeURIComponent(namaTamu);
 
 }
