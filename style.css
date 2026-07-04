@@ -66,6 +66,32 @@ margin-top:20px;
 font-size:18px;
 }
 
+.guest{
+
+margin-top:35px;
+
+}
+
+.guest p{
+
+font-size:16px;
+
+opacity:.9;
+
+}
+
+#guestName{
+
+margin-top:8px;
+
+font-size:24px;
+
+font-weight:500;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
 button{
 margin-top:35px;
 width:100%;
