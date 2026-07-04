@@ -1,3 +1,9 @@
+const intro=document.getElementById("intro");
+
+const introVideo=document.getElementById("introVideo");
+
+const skip=document.getElementById("skip");
+
 const tombol = document.getElementById("open");
 
 const cover = document.querySelector(".cover");
@@ -19,5 +25,17 @@ music.play();
     home.style.display = "block";
 
   }, 800);
+
+}
+
+introVideo.onended=function(){
+
+intro.style.display="none";
+
+}
+
+skip.onclick=function(){
+
+intro.style.display="none";
 
 }
