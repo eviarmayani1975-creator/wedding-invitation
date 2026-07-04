@@ -473,3 +473,63 @@ transition:.3s;
 transform:translateY(-3px);
 
 }
+
+.gallery{
+
+padding:80px 25px;
+
+background:#fffaf6;
+
+text-align:center;
+
+}
+
+.gallery h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+margin-bottom:40px;
+
+color:#5c4033;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+
+gap:15px;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+aspect-ratio:1/1;
+
+object-fit:cover;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+}
