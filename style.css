@@ -225,3 +225,71 @@ font-size:16px;
 cursor:pointer;
 
 }
+
+.countdown{
+
+margin-top:70px;
+
+text-align:center;
+
+}
+
+.countdown h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:38px;
+
+margin-bottom:35px;
+
+color:#5c4033;
+
+}
+
+.countdown-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.item{
+
+width:95px;
+
+padding:18px;
+
+background:#f8f3ed;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.item span{
+
+display:block;
+
+font-size:34px;
+
+font-weight:bold;
+
+color:#b8860b;
+
+}
+
+.item p{
+
+margin-top:8px;
+
+font-size:15px;
+
+color:#555;
+
+}
