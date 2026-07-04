@@ -10,6 +10,12 @@ body{
 font-family:'Poppins',sans-serif;
 }
 
+section{
+
+padding:90px 25px;
+
+}
+
 .cover{
 position:relative;
 width:100%;
