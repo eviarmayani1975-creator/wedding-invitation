@@ -608,3 +608,104 @@ transition:.3s;
 transform:translateY(-3px);
 
 }
+
+.wish{
+
+padding:80px 25px;
+
+background:#fffaf5;
+
+text-align:center;
+
+}
+
+.wish h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:42px;
+
+margin-bottom:35px;
+
+color:#5c4033;
+
+}
+
+#wishForm{
+
+max-width:600px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+#wishForm input,
+#wishForm textarea{
+
+padding:18px;
+
+border:1px solid #ddd;
+
+border-radius:15px;
+
+font-size:16px;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+#wishForm textarea{
+
+resize:vertical;
+
+min-height:140px;
+
+}
+
+#wishList{
+
+margin-top:40px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.message{
+
+padding:20px;
+
+border-radius:18px;
+
+background:white;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+text-align:left;
+
+}
+
+.message h4{
+
+margin-bottom:10px;
+
+color:#5c4033;
+
+}
+
+.message p{
+
+line-height:28px;
+
+color:#666;
+
+}
