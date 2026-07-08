@@ -82,25 +82,57 @@ document.getElementById("seconds").textContent = Math.max(seconds,0);
 
 const form = document.getElementById("rsvpForm");
 
-form.addEventListener("submit", function(e){
+form.addEventListener("submit", async function(e){
 
     e.preventDefault();
 
     const nama = document.getElementById("nama").value;
-
     const status = document.getElementById("status").value;
 
-    alert(
+    const jumlahElement = document.getElementById("jumlah");
+    const jumlah = jumlahElement ? jumlahElement.value : 1;
 
-        "Terima kasih, " +
+    try{
 
-        nama +
+        const response = await fetch(SCRIPT_URL,{
 
-        "\n\nKonfirmasi Anda: " +
+            method:"POST",
 
-        status
+            body:JSON.stringify({
 
-    );
+                type:"rsvp",
+
+                nama:nama,
+
+                kehadiran:status,
+
+                jumlah:jumlah
+
+            })
+
+        });
+
+        const result = await response.json();
+
+        if(result.success){
+
+            alert("Terima kasih, konfirmasi RSVP berhasil dikirim.");
+
+            form.reset();
+
+        }else{
+
+            alert("Gagal mengirim RSVP.");
+
+        }
+
+    }catch(error){
+
+        alert("Terjadi kesalahan. Silakan coba lagi.");
+
+        console.error(error);
+
+    }
 
 });
 
