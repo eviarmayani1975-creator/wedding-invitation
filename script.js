@@ -1,3 +1,5 @@
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxb6TjN7C7-9b2DJsFGT7X7L19IBFBLBK3rIbbFskDr9VNWAjr29SHWn0gXhWvRbeev8w/exec";
+
 const guestName = document.getElementById("guestName");
 
 const intro=document.getElementById("intro");
