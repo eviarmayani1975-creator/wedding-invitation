@@ -116,15 +116,15 @@ form.addEventListener("submit", async function(e){
 
         if(result.success){
 
-            alert("Terima kasih, konfirmasi RSVP berhasil dikirim.");
+    showSuccess("Konfirmasi kehadiran berhasil dikirim. Sampai bertemu di hari bahagia kami ❤️");
 
-            form.reset();
+    form.reset();
 
-        }else{
+}else{
 
-            alert("Gagal mengirim RSVP.");
+    showSuccess("Maaf, konfirmasi tidak dapat dikirim. Silakan coba lagi.");
 
-        }
+}
 
     }catch(error){
 
