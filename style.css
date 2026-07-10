@@ -1129,6 +1129,9 @@ body::after{
 
     background:rgba(0,0,0,.92);
 
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+
     display:none;
 
     justify-content:center;
