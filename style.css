@@ -570,21 +570,9 @@ color:#5c4033;
 
 }
 
-.card{
-
-    background:white;
-
-    border-radius:20px;
-
-    padding:30px;
-
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
-
-    margin:25px auto;
-
-    max-width:650px;
-
-}
+border:1px solid rgba(200,169,106,.35);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-radius:24px;
 
 .card h3{
 
