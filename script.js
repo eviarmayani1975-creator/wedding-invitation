@@ -1,4 +1,4 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxb6TjN7C7-9b2DJsFGT7X7L19IBFBLBK3rIbbFskDr9VNWAjr29SHWn0gXhWvRbeev8w/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby9MJzc_qkim20iXHtF24gzrBHwPmqh8ezCx-kMFh5H_Dqp8IwBoTBmUh1s82io64_Gfg/exec";
 
 const guestName = document.getElementById("guestName");
 
