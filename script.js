@@ -195,3 +195,85 @@ function createPetal(){
 }
 
 setInterval(createPetal,700);
+
+// ==========================
+// Gallery Lightbox
+// ==========================
+
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+const lightbox = document.getElementById("lightbox");
+
+const lightboxImage = document.getElementById("lightboxImage");
+
+const closeLightbox = document.getElementById("closeLightbox");
+
+const prevImage = document.getElementById("prevImage");
+
+const nextImage = document.getElementById("nextImage");
+
+let currentIndex = 0;
+
+function showImage(index){
+
+    currentIndex = index;
+
+    lightboxImage.src = galleryImages[index].src;
+
+    lightbox.style.display = "flex";
+
+}
+
+galleryImages.forEach((img,index)=>{
+
+    img.addEventListener("click",()=>{
+
+        showImage(index);
+
+    });
+
+});
+
+closeLightbox.onclick=function(){
+
+    lightbox.style.display="none";
+
+}
+
+nextImage.onclick=function(){
+
+    currentIndex++;
+
+    if(currentIndex>=galleryImages.length){
+
+        currentIndex=0;
+
+    }
+
+    showImage(currentIndex);
+
+}
+
+prevImage.onclick=function(){
+
+    currentIndex--;
+
+    if(currentIndex<0){
+
+        currentIndex=galleryImages.length-1;
+
+    }
+
+    showImage(currentIndex);
+
+}
+
+lightbox.onclick=function(e){
+
+    if(e.target===lightbox){
+
+        lightbox.style.display="none";
+
+    }
+
+}
