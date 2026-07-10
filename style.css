@@ -745,3 +745,62 @@ line-height:28px;
 color:#666;
 
 }
+
+body{
+    background:#fbf8f3;
+    position:relative;
+}
+
+/* bunga kiri atas */
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:260px;
+
+    height:260px;
+
+    background:url("assets/floral/top-left.png") no-repeat;
+
+    background-size:contain;
+
+    opacity:.28;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+/* bunga kanan bawah */
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    bottom:0;
+
+    right:0;
+
+    width:260px;
+
+    height:260px;
+
+    background:url("assets/floral/bottom-right.png") no-repeat;
+
+    background-size:contain;
+
+    opacity:.28;
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
