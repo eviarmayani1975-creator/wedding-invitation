@@ -318,3 +318,27 @@ function handleSwipe(){
     }
 
 }
+
+// ==========================
+// Success Modal
+// ==========================
+
+const successModal = document.getElementById("successModal");
+
+const modalMessage = document.getElementById("modalMessage");
+
+const closeModal = document.getElementById("closeModal");
+
+function showSuccess(message){
+
+    modalMessage.textContent = message;
+
+    successModal.style.display = "flex";
+
+}
+
+closeModal.onclick=function(){
+
+    successModal.style.display="none";
+
+}
