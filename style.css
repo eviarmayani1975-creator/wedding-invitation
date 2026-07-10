@@ -25,23 +25,70 @@ section{
 }
 
 .cover{
-position:relative;
-width:100%;
-height:100vh;
-overflow:hidden;
-display:flex;
-justify-content:center;
-align-items:center;
+    position:fixed;
+    inset:0;
+    z-index:9999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:url("assets/images/bg-cover.jpg") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
-.cover::before{
-content:"";
-position:absolute;
-inset:0;
-background-image:url("assets/images/prewedding.jpg");
-background-size:cover;
-background-position:center;
-filter:brightness(.45);
+.cover-content{
+    width:100%;
+    max-width:420px;
+    text-align:center;
+    padding:40px 30px;
+}
+
+.cover-photo{
+    width:210px;
+    height:210px;
+    margin:0 auto 35px;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.cover-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.undangan-untuk{
+    color:#6c6c6c;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.cover h1{
+    font-family:"Great Vibes",cursive;
+    font-size:52px;
+    color:#1d4f91;
+    margin:0;
+}
+
+.cover span{
+    display:block;
+    font-size:38px;
+    color:#c89b3c;
+    margin:5px 0;
+}
+
+#openInvitation{
+    margin-top:35px;
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:#1d4f91;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
 }
 
 .overlay{
