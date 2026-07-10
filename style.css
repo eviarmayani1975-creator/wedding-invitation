@@ -514,7 +514,7 @@ color:#6b4f3b;
 
 }
 
-@keyframes pulse{
+@keyframes heartbeat{
 
 0%{
 
@@ -522,9 +522,21 @@ transform:scale(1);
 
 }
 
-50%{
+25%{
 
 transform:scale(1.2);
+
+}
+
+40%{
+
+transform:scale(.95);
+
+}
+
+60%{
+
+transform:scale(1.25);
 
 }
 
