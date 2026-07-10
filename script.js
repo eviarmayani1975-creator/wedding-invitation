@@ -277,3 +277,44 @@ lightbox.onclick=function(e){
     }
 
 }
+
+// ==========================
+// Swipe Gallery (Mobile)
+// ==========================
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+lightbox.addEventListener("touchstart", function(e){
+
+    touchStartX = e.changedTouches[0].screenX;
+
+});
+
+lightbox.addEventListener("touchend", function(e){
+
+    touchEndX = e.changedTouches[0].screenX;
+
+    handleSwipe();
+
+});
+
+function handleSwipe(){
+
+    const distance = touchStartX - touchEndX;
+
+    // Swipe ke kiri
+    if(distance > 50){
+
+        nextImage.click();
+
+    }
+
+    // Swipe ke kanan
+    if(distance < -50){
+
+        prevImage.click();
+
+    }
+
+}
