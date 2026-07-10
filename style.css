@@ -948,3 +948,49 @@ body::after{
     right:0;
 
 }
+
+/* ===========================
+   Falling Petals
+=========================== */
+
+#petals{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:999;
+
+}
+
+.petal{
+
+    position:absolute;
+
+    top:-50px;
+
+    width:20px;
+
+    height:20px;
+
+    opacity:.8;
+
+    animation:fall linear forwards;
+
+}
+
+@keyframes fall{
+
+    0%{
+        transform:translateY(-40px) rotate(0deg);
+    }
+
+    100%{
+        transform:translateY(110vh) rotate(360deg);
+    }
+
+}
