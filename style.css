@@ -669,21 +669,11 @@ margin:auto;
 }
 
 .gallery-grid img{
-
-width:100%;
-
-aspect-ratio:1/1;
-
-object-fit:cover;
-
-border-radius:18px;
-
-box-shadow:0 8px 20px rgba(0,0,0,.12);
-
-transition:.3s;
-
-cursor:pointer;
-
+    width:100%;
+    aspect-ratio:3/4;
+    object-fit:contain;
+    background:#fff;
+    border-radius:18px;
 }
 
 .gallery-grid img:hover{
