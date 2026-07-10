@@ -165,3 +165,33 @@ wishList.prepend(card);
 wishForm.reset();
 
 });
+
+// ==========================
+// Falling Petals
+// ==========================
+
+const petals = document.getElementById("petals");
+
+function createPetal(){
+
+    const petal = document.createElement("div");
+
+    petal.className = "petal";
+
+    petal.innerHTML = "🌸";
+
+    petal.style.left = Math.random()*100+"vw";
+
+    petal.style.fontSize = (16+Math.random()*18)+"px";
+
+    petal.style.animationDuration = (6+Math.random()*5)+"s";
+
+    petals.appendChild(petal);
+
+    setTimeout(()=>{
+        petal.remove();
+    },11000);
+
+}
+
+setInterval(createPetal,700);
