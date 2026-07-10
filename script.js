@@ -128,7 +128,7 @@ form.addEventListener("submit", async function(e){
 
     }catch(error){
 
-        alert("Terjadi kesalahan. Silakan coba lagi.");
+        showSuccess("Terjadi kesalahan. Silakan coba beberapa saat lagi.");
 
         console.error(error);
 
