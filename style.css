@@ -29,26 +29,38 @@ section{
     inset:0;
     z-index:9999;
 
+    background-image:url("assets/images/background-cover.jpg");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.cover-overlay{
+    width:100%;
+    height:100%;
+
     display:flex;
     justify-content:center;
     align-items:center;
 
-    background:url("assets/images/background-cover.jpg") center center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background:rgba(255,255,255,.08);
 }
 
 .cover-content{
     width:100%;
-    max-width:420px;
+    max-width:430px;
     text-align:center;
-    padding:40px 30px;
+    padding:30px;
 }
 
 .cover-photo{
-    width:210px;
-    height:210px;
-    margin:0 auto 35px;
+    width:205px;
+    height:205px;
+    margin:0 auto 30px;
     border-radius:50%;
     overflow:hidden;
 }
